@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #edf1f4;
+    min-height: 100vh;
+}
+.loader{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.05),#edf1f4);
+    box-shadow: 10px 10px 20px rgba(0,0,0,.1), -5px -5px 10px #fff, inset -5px -5px 5px rgba(255,255,255,.5), inset 5px 5px 5px rgba(0,0,0,.05);
+}
+.loader input{
+    overflow: hidden;
+    position: relative;
+    width: 25vw;
+    height: 6vh;
+    border: 2px solid #edf1f4;
+    margin: 20px;
+    border-radius: 40px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.05),#edf1f4);
+    box-shadow: 10px 10px 20px rgba(0,0,0,.1), -10px -10px 10px #fff, inset -5px -5px 5px rgba(255,255,255,.5), inset 5px 5px 5px rgba(0,0,0,.05);
+}
+.container-fluid{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.05),#edf1f4);
+    box-shadow: 15px 15px 20px rgba(0,0,0,.1), -15px -15px 20px #fff, inset -5px -5px 5px rgba(255,255,255,.5), inset 5px 5px 5px rgba(0,0,0,.05);
+}
+.loader input::before{
+    content: '';
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    box-shadow: 15px 15px 20px rgba(0,0,0,.1), -15px -15px 20px #fff, inset -5px -5px 5px rgba(255,255,255,.5), inset 5px 5px 5px rgba(0,0,0,.05);
+}
+.loader input::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: inset -5px -5px 5px rgba(0,0,0,.2), 0 220px 0 200px #2196f3;
+}
+.form .inputBox input[type="submit"]{
+    background: #fff;
+    color: #666;
+    max-width: 100px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.forget{
+    color: #fff;
+}
+.forget a{
+    color: #fff;
+    font-weight: 600;
+}
